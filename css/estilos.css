@@ -39,14 +39,23 @@ header {
 
 /*--------banner perro-------*/
 
-.banner-img {
+.slider {
     background: #5CCCAF;
+}
+
+.slider img {
+    width: 110%;
+    height: 350px;
 }
 
 .contenedor-perro img {
     max-width: 65%;
     margin: 0 auto;
     display: block;
+}
+
+.contenedor-perro {
+    background-color: #5CCCAF;
 }
 
 
@@ -64,11 +73,16 @@ header {
     padding: 15px;
 }
 
+.redes-sociales {
+    display: flex;
+    flex-direction: row;
+}
+
 .redes-sociales img {
     padding: 5px;
     border-radius: 50px;
     background-color: white;
-    margin-right: 10px;
+    margin: 10px;
 }
 
 
@@ -90,6 +104,7 @@ header {
 .banner-contenido img {
     width: 50%;
     padding: 10px;
+    background-color: white;
 }
 
 .contenedor {
@@ -110,6 +125,9 @@ header {
 
 .crowfounding {
     width: 48%;
+    padding: 10px;
+    margin-bottom: auto;
+    xx
 }
 
 .rescate h4,
@@ -127,12 +145,63 @@ header {
 }
 
 
+/*-----------galeria------------*/
+
+.galeria {
+    background-color: #5CCCAF;
+    padding: 15px;
+}
+
+.grid {
+    width: 96%;
+    max-width: 1500px;
+    margin: 24px auto;
+}
+
+.grid li {
+    display: inline-block;
+    padding: 8px;
+    position: relative;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.grid li:hover {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+.grid a {
+    color: #17f;
+    text-decoration: none;
+}
+
+.grid h3 {
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.grid ul {
+    padding: 0;
+    margin: 0;
+}
+
+.grid ul li {
+    margin-bottom: 1em;
+}
+
+
 /*-----------footer------------*/
 
 .footer {
     background: #9b9b9b;
     padding: 30px 0;
-    margin-top: 60px;
     text-align: center;
     font-family: calibri;
 }
@@ -167,8 +236,6 @@ header {
         justify-content: center;
         text-align: center;
         padding: 10px;
-        border-top: 1px solid rgba(250, 255, 255, 0.3);
-        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     }
     .contenedor {
         display: flex;
@@ -180,6 +247,14 @@ header {
     }
     .crowfounding {
         display: block;
+    }
+}
+
+@media screen and (min-width: 568px) {
+    .grid {
+        column-width: 200px;
+        column-count: 3;
+        column-gap: 24px;
     }
 }
 

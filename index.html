@@ -1,11 +1,28 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>MisPerris</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="js/dist/jquery.bxslider.css">
+    <script src="js/dist/jquery.bxslider.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/dist/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.slider').bxSlider({
+                infiniteLoop: true,
+                auto: true,
+                pager: false
+            });
+
+
+        });
+    </script>
 </head>
+
 <body>
     <header>
         <div class="banner">
@@ -22,7 +39,11 @@
     </header>
     <section class="banner-img">
         <div class="contenedor-perro">
-            <img src="img/perro.png">
+            <div class="slider">
+                <div><img src="img/adoptados/Apolo.jpg" alt=""></div>
+                <div><img src="img/adoptados/Duque.jpg" alt=""></div>
+                <div><img src="img/adoptados/Tom.jpg" alt=""></div>
+            </div>
         </div>
     </section>
     <section class="contenedor-top">
@@ -44,7 +65,7 @@
                 <h4>FINANCIAMIENTO</h4>
                 <span class="linea">_____</span>
                 <p>Rescatamos perros en situacion de peligro y/o abandono. Los rehabilitamos y preparamos para buscarles un hogar.</p>
-                <img src="img/rescate.jpg" >
+                <img src="img/rescate.jpg">
             </div>
             <div class="crowfounding">
                 <img src="img/crowfunding.jpg">
@@ -56,10 +77,48 @@
             </div>
         </div>
     </section>
+    <section class="galeria">
+        <ul class="grid">
+            <li>
+                <a href="#">
+                    <img src="img/rescatados/Bigotes.jpg" alt="">
+                </a>
+            </li>
+
+
+            <li>
+                <a href="#">
+                    <img src="img/rescatados/Luna.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/rescatados/Chocolate.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/rescatados/Maya.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/rescatados/Oso.jpg" alt="">
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <img src="img/rescatados/Pexel.jpg" alt="">
+                </a>
+            </li>
+        </ul>
+    </section>
     <footer class="footer">
         <div class="contenido">
             <p>Desarrollo Web y Movile</p>
         </div>
     </footer>
 </body>
+
 </html>
