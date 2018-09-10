@@ -39,7 +39,7 @@
             <form action="" method="POST" name="form1">
                 <label for="nombre">Nombres<input type="text" required name="nombre" placeholder="Ingrese Nombres"></label>
                 <label for="apellido">Apellidos <input type="text" required name="apellido" placeholder="Ingrese Apellidos"></label>
-                <label for="run">RUN <input type="text" name="rut" id="rut" placeholder="Ingrese su Rut" style="color: red"></label>
+                <label for="run">RUN <input type="text" name="rut" id="rut" placeholder="Ingrese su Rut" patter="\d{7,8}-[0-9kK]" ></label>
                 <label for="fecha_nacimiento">Fecha de Nacimiento <input type="date" required max="2001-01-01" name="fecha_nacimiento"></label>
                 <label for="telefono">Teléfono <input type="tel" name="telefo" placeholder="Ingrese N° Telefonico"></label>
                 <label for="correo">Correo Electronico <input type="text" required name="correo" placeholder="nombre@dominio.cl"></label>
