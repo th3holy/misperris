@@ -1,0 +1,61 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/formilario.css">
+</head>
+
+<body>
+    <header>
+        <div class="banner">
+            <img src="img/logo.png">
+            <nav class="menu-top">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Quienes Somos</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="formulario.html">Contactanos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="contenedor-form">
+        <div class="fomulario">
+            <h2>Formulario para adoptar una mascota</h2>
+            <form action="" method="POST">
+                <label for="nombre">Nombres<input type="text" required name="nombre" placeholder="Ingrese Nombres"></label>
+                <label for="apellido">Apellidos <input type="text" required name="apellido" placeholder="Ingrese Apellidos">
+                </label>
+                <label for="run">RUN <input type="text" id="rut" name="rut" required oninput="checkRut(this)"
+                        placeholder="Ingrese RUN"></label>
+                <label for="fecha_nacimiento">Fecha de Nacimiento <input type="date" required max="2001-01-01" name="fecha_nacimiento"></label>
+                <label for="telefono">Teléfono <input type="tel" name="telefo" placeholder="Ingrese N° Telefonico"></label>
+                <label for="correo">Correo Electronico <input type="text" required name="correo" placeholder="nombre@dominio.cl"></label>
+                <label for="region">Region <select required id="regiones"></select> </label>
+                <label for="comuna">Comuna <select required id="comunas"></select> </label>
+                <label for="vivienda">Tipo de vivienda
+                    <select required name="tipo_de_vivienda">
+                        <option selected>Seleccione</option>
+                        <option value="">Casa con patio grande</option>
+                        <option value="">Casa con patio pequeño</option>
+                        <option value="">Casa sin patio</option>
+                        <option value="">Departamento</option>
+                    </select>
+                </label>
+            </form>
+        </div>
+        <button type="button" class="boton">Enviar</button>
+    </section>
+    <footer class="footer">
+        <div class="contenido">
+            <p>Desarrollo Web y Movile</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
